@@ -1,0 +1,24 @@
+$textcolor : #b12643;
+
+.drawer{
+    position: absolute;
+    background-color: #fff;
+    height: 99%;
+    width: 250px;
+    z-index: 500;
+    border: 1px solid $textcolor;
+    animation: toggledrawer 1s ease-in-out ;
+}
+
+@keyframes toggledrawer {
+    0%{
+        transform: translateX(-100vw);
+    }
+    50%{
+        transform: translateX(20vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+

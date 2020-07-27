@@ -1,0 +1,30 @@
+$textcolor : #b12643;
+
+.logo{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 20px auto;
+    
+    img{
+        width: 100%;
+        border-radius: 50%;
+        max-width: 300px;
+        min-width: 50px;
+        box-shadow: 1px 1px 3px 1px $textcolor;
+    }
+    
+}
+
+
+@media screen and (min-width:500px){
+    .logo{
+        img{
+            width: 80%;
+        }
+    }
+}

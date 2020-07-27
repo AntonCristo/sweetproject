@@ -1,0 +1,22 @@
+.favs{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 10px;
+    
+}
+
+.loadingFavStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:700px){
+    .favs{
+        grid-template-columns: 0.9fr 0.9fr 0.9fr;
+        grid-template-rows: calc(300px + 2vh);
+    }
+}

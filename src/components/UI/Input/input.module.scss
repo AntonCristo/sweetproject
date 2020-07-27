@@ -1,0 +1,65 @@
+$textcolor : #b12643;
+
+input{
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px;
+    box-shadow:inset 1px 1px 5px 3px $textcolor;
+    height: auto;
+    width: calc(200px + 2vw);
+    color: $textcolor;
+}
+
+input::placeholder{
+    color: $textcolor;
+    font-size: 1.1em;
+    font-style: italic;
+    
+}
+
+input:focus{
+    outline-style: none;
+    box-shadow:inset 1px 1px 5px 3px salmon;
+}
+
+textarea{
+    width: 250px;
+    height: 150px;
+    resize: none;
+    margin-bottom: 20px;
+    border:none;
+    border-radius: 10px;
+    color: $textcolor;
+    font-size: 1.3em;
+    padding:8px;
+    box-shadow:inset 1px 1px 3px 3px $textcolor;
+
+}
+
+textarea::placeholder{
+    color: $textcolor;
+    font-weight: bold;
+}
+
+textarea:focus{
+    box-shadow:inset 1px 1px 3px 3px salmon;
+    outline:none;
+}
+
+@media screen and (min-width:500px){
+    textarea{
+        width: 350px;
+        height: 200px;
+           
+    }
+}
+
+
+@media screen and (orientation:landscape) and (max-width:800px){
+    input{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,78 @@
+$textcolor : #b12643;
+
+.landingPage{
+    background-image: url('../../assets/background.jpg');
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+
+    .myheader {
+        color: $textcolor;
+        font-size: 3em;
+        text-shadow: 1px 2px 3px #262626;
+    }
+
+}
+
+.oldbutton{
+    cursor: pointer;
+    font-size: calc(0.9em + 2vw);
+    margin-top: 20px;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: #144019; 
+    font-weight: bolder;
+    outline: none;
+}
+
+.oldbutton:hover{
+    opacity: 0.7;
+}
+
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width:500px){
+    .landingPage{
+        .myheader{
+            font-size: 5em;
+        }
+
+        .oldbutton{
+            font-size: calc(0.5em + 1vw);
+        }       
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width:800px){
+    .landingPage{
+        flex-direction: row;
+        justify-content: space-around;
+        .myheader{
+            font-size: 3em;
+            text-align: center;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+
+        img{
+            width: 50% !important;
+        }
+    }
+
+    .buttons{
+        margin-right: 20px;
+    }
+}

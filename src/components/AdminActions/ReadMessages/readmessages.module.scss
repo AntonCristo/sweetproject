@@ -1,0 +1,30 @@
+$textcolor : #b12643;
+
+.readmessages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    h3{
+        color: $textcolor;
+    }
+}
+
+.messageslist{
+    height: 100%;
+    width: 350px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+@media screen and (min-width:500px){
+    .messageslist{
+        width: 600px;
+    }
+}

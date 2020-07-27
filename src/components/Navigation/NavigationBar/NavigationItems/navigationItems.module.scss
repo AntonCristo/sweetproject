@@ -1,0 +1,16 @@
+.items{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+@media screen and (min-width:500px){
+    .items{
+        flex-direction: row;
+        align-items: center;
+        background-color: #fff;
+    }
+}
+

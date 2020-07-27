@@ -1,0 +1,32 @@
+$textcolor : #b12643;
+
+.layout{
+    
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .header{
+        flex:1;
+        display: flex;
+        
+    }   
+    .body{
+        flex:8;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid $textcolor;
+        overflow-y: scroll;
+    }
+    .footer{
+        flex:1;
+        border-top: 1px solid #fff;
+        background-color: $textcolor;
+        text-align: center;
+        font-size: 1.4em;
+        font-style: oblique;
+        color: #fff
+    } 
+}
+

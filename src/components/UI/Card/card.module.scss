@@ -1,0 +1,62 @@
+$backgroundColor : #b12643;
+
+
+.card{
+    background-color: $backgroundColor;
+    width: 100%;
+    height: calc(200px + 2vh);
+    border-radius: 10px;
+    display: flex;
+    border: 2px solid salmon;
+
+    .myImg{
+        flex:3;
+        border-right: 2px solid salmon;
+        border-radius: 10px 0 0 10px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 0 0 10px;
+        }
+    }
+
+    .controls{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.controls div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+.controls div:nth-child(1):hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
+
+
+
+.controls div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+.controls div:nth-child(2):hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
+
+
+@media screen and (min-width:500px){
+    .card{
+        height: calc(300px + 2vh);
+    }
+}

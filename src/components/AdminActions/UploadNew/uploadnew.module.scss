@@ -1,0 +1,92 @@
+$textcolor : #b12643;
+
+.upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $textcolor;
+    width: 300px;
+
+
+
+    .inputlabel{
+        margin-top: 10px;
+        border: 1px solid salmon;
+        border-radius: 10px 5px;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+
+    .inputlabel input {
+        width: 0.1px;
+        height: 0.1px;
+        margin:0;
+        padding:0;
+        z-index: -1;
+        border: none;
+        box-shadow: none;
+    }
+    .inputlabel label {
+        color:$textcolor;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 1.4em;
+        z-index: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-left: 3px;
+        }
+
+    }
+
+    .previewdiv{
+        margin-top: 10px;
+        width: 100%;
+        height: 200px;
+        border: 1px solid salmon; 
+        border-radius: 10px 5px;
+        text-align: center;
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 5px;
+        }
+    }
+
+    .checkboxes{
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 1px solid salmon;
+        border-radius: 10px 5px;
+
+    }
+    .controlbuttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    p{
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (min-width:500px){
+    .upload{
+        width: 450px;
+    }
+
+    .previewdiv{
+        height: 300px !important;
+        
+
+    }
+}
