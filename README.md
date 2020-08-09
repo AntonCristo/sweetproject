@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-!!! After pulling and installing modules, please run : 'npm run devserver:start' to start a local webpack development server
+!!! After pulling and installing modules, please run : 'npm run devserver:start' to start a local webpack development server on port 8082
 or 'npm run heroku-postbuild' to produce a build folder !!!
 
 In the project directory, you can run:
